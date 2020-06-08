@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- documento html5 -->
+<html lang="it">
+
+<head>
+	<meta charset="UTF-8" />
+	<title> Esercizio 53 </title>
+	<link rel="stylesheet" href="style.css">
+	<script type="application/javascript" src="index.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<h3>VALIDAZIONE DATI ADVANCED</h3>
+		<form action="" method="post" name="datiUtente" onsubmit="return ValidaForm();">
+			COGNOME E NOME:
+			<input type="text" id="nominativo" name="nominativo" size="50" maxlength="50" onchange="return Nome();">
+			<br>
+
+			<br>
+			SESSO:&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="sesso" value="M"> M
+			&nbsp;&nbsp; - &nbsp;&nbsp;
+			<input type="radio" name="sesso" value="F"> F
+			<br>
+			ATENEO:
+			<select id="ateneo" name="ateneo">
+				<option value="nessuno" selected></option>
+				<option value="sapienza">La Sapienza</option>
+				<option value="torvergata">Tor Vergata</option>
+				<option value="romatre">Roma Tre</option>
+			</select>
+			<br>
+			CAP:
+			<input type="text" name="cap" id="cap" size="5" maxlength="5" onchange="Cap()">
+			<br><br>
+			STUDENTE LAVORATORE
+			<input type="checkbox" name="lavoratore" id="lavoratore" onclick="Desc()">
+			<br>
+			DESCRIZIONE LAVORO:
+			<input type="text" name="descr" id="descr" size="80" maxlength="80" disabled>
+			<br>
+			<div class="buttons">
+				<input type="submit" value="INVIA">
+				<input type="reset" value="RESET">
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
