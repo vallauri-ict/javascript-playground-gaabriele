@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />   
+	<title>Gioco del 15</title>
+	<style>
+		h1{
+			text-align:center;
+		}
+		
+		#wrapper{
+			width:200px;
+			height:200px;
+			margin:15px auto;
+			border:0px solid red;
+			
+			/*  
+			    display:flex;
+			    flex-wrap:wrap;
+            */			
+		}
+		
+		#wrapper div{
+			width:40px;
+			height:40px;			
+			margin:3px;
+			padding:0;
+			border:1px solid black;
+			font-size:16pt;
+			font-weight:bold;	
+			text-align:center;
+			background-color: #cccccc;
+			color: #fff;
+			line-height:40px;
+			
+			display:inline-block;	
+			vertical-align:middle;	
+
+			/* senza vertical-align dispaly:inline-block falsa gli allineamenti */
+			/* una alternativa potrebbe essere quella di utilizzare "&nbsp;" nella cella vuota */
+            /* oppure impostare il flax layout sul contenitore */
+
+			user-select: none;
+		}
+	</style>
+	<script type="text/javascript" src="index.js">	 </script>
+</head>
+
+
+<body>
+	<h1>  Gioco del 15 </h1>
+	<div id="wrapper" > </div>
+</body>
+</html>
